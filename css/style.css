@@ -4,10 +4,108 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto-Regular";
 }
 body {
     width: 100dvw;
     height: 100dvh;
-    background: var(--color--one);
+    background: linear-gradient(var(--color--one), var(--color--one--rgba));
+    background-image: url(../storage/img/giphy\ \(1\).gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    overflow-y: hidden;
+}
+
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: var(--color--five);
+}
+
+*::-webkit-scrollbar-track:hover,
+*::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}
+
+*::-webkit-scrollbar-thumb {
+
+    border: 1px solid var(--color--five);
+    background-color: var(--color--one--rgba);
+}
+
+.header {
+    height: 10vh;
+}
+.header__title {
+    /* background: red; */
+    color: var(--color--five);
+    font-size: 2.3rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.load{
+    background: linear-gradient(120deg, #ffffff0e 30%, #ffffff23 38%, #f0f0f032 40%, #e5e5e50c 40%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: load 2s infinite;
+    width: 100%;
+    margin: 12px 0;
+    height: 100px;
+}
+@keyframes load{
+    100%{
+        background-position: -100% 0;
+    }
+}
+.main {
+    /* background: orange; */
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1.5fr 6fr 2fr;
+    grid-template-areas: "nav__1 main nav__2";
+}
+
+.nav__description {
+    /* background: red; */
+    grid-area: nav__1;
+}
+
+.description__item {
+    /* background: blue; */
+    overflow-y: auto;
+    height: 75vh;
+}
+
+.description__buttom {
+    /* background: #00ff84; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+.description__container {
+    /* background: violet; */
+    display: flex;
+    gap: 10px;
+    margin: 0 var(--layout-description-container-x);
+    margin-bottom: 25px;
+}
+
+.description__container div:last-child h3 {
+    color: var(--color--five);
+}
+
+.description__container div:last-child small,
+.description__container div:last-child a {
+    margin-top: 25px;
+    color: var(--color--two);
+    text-decoration: none;
 }
