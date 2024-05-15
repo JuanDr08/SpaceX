@@ -219,4 +219,201 @@ export const tableCoresLaunches = async (Cores) => {
     information__table__1.append(h3, hr, div);
 };
 
+export const tableCoreLaunchesid = async (Cores) => {
+    let information__table__1 = document.querySelector("#information__table__2");
+    information__table__1.innerHTML = "";
+    let h3 = document.createElement("h3");
+    h3.style.fontSize = "32px"; // Aumenta el tamaño de fuente del título a 32 píxeles
+    h3.style.color = "red";
+    h3.textContent = "Capsule Launches";
+    let hr = document.createElement("hr");
+    let div = document.createElement("div");
+    div.classList.add("table__container__1");
+    let div1 = document.createElement("div");
+    let span1 = document.createElement("span");
+    span1.style.fontSize = "24px"; // Aumenta el tamaño de fuente del texto a 24 píxeles
+    span1.textContent = "Launches";
+    let strong1 = document.createElement("strong");
+    strong1.style.fontSize = "24px"; // Aumenta el tamaño de fuente del texto a 24 píxeles
+    strong1.textContent = `${Cores.launches}`;
+    div1.append(span1, strong1);
+    div.append(div1);
+    information__table__1.append(h3, hr, div);
+}
 
+//////////////////////////////////// DRAGONES ////////////////////////////////////////////7
+
+export const tableDragonColumn1 = async (Dragons) => {
+    let informationTable1 = document.querySelector("#information__table__1");
+    informationTable1.innerHTML = "";
+    
+    let h3 = document.createElement("h3");
+    h3.textContent = "Dragon Information";
+    let hr = document.createElement("hr");
+    informationTable1.append(h3, hr);
+
+    let div = document.createElement("div");
+    div.classList.add("table__container__1");
+
+    let div1 = document.createElement("div");
+    let span1 = document.createElement("span");
+    span1.textContent = "Dragon in service";
+    let strong1 = document.createElement("strong");
+    strong1.textContent = `${Dragons.active ? "Active" : "Inactive"}`;
+    div1.append(span1, strong1);
+
+    let div2 = document.createElement("div");
+    let span2 = document.createElement("span");
+    span2.textContent = "Crew capacity";
+    let strong2 = document.createElement("strong");
+    strong2.textContent = `${Dragons.crew_capacity}`;
+    div2.append(span2, strong2);
+
+    let div3 = document.createElement("div");
+    let span3 = document.createElement("span");
+    span3.textContent = "Cargo capacity";
+    let strong3 = document.createElement("strong");
+    strong3.textContent = `${Dragons.cargo_capacity_kg} kg`;
+    div3.append(span3, strong3);
+
+    let div4 = document.createElement("div");
+    let span4 = document.createElement("span");
+    span4.textContent = "Heat shield material";
+    let strong4 = document.createElement("strong");
+    strong4.textContent = `${Dragons.heat_shield.material}`;
+    div4.append(span4, strong4);
+
+    let div5 = document.createElement("div");
+    let span5 = document.createElement("span");
+    span5.textContent = "Thruster type";
+    let strong5 = document.createElement("strong");
+    strong5.textContent = `${Dragons.thrusters.type}`;
+    div5.append(span5, strong5);
+
+    let div6 = document.createElement("div");
+    let span6 = document.createElement("span");
+    span6.textContent = "Number of thrusters";
+    let strong6 = document.createElement("strong");
+    strong6.textContent = `${Dragons.thrusters.number}`;
+    div6.append(span6, strong6);
+
+    div.append(div1, div2, div3, div4, div5, div6);
+    informationTable1.append(div);
+}
+
+
+//////////////////////////// LANDPADS /////////////////////////////////////////////////////777
+
+export const tableCoresLaunchesland = async (Land) => {
+    let information__table__1 = document.querySelector("#information__table__1");
+    information__table__1.innerHTML = "";
+    let h3 = document.createElement("h3");
+    h3.style.fontSize = "22px"; // Aumenta el tamaño de fuente del título a 32 píxeles
+    h3.style.color = "red";
+    h3.textContent = "LANDPADS ID";
+    let hr = document.createElement("hr");
+    let div = document.createElement("div");
+    div.classList.add("table__container__1");
+    let div1 = document.createElement("div");
+    let span1 = document.createElement("span");
+    span1.style.fontSize = "14px"; // Aumenta el tamaño de fuente del texto a 24 píxeles
+    span1.style.color = "blue";
+    span1.textContent = "N° ID";
+    let strong1 = document.createElement("strong");
+    strong1.style.fontSize = "14px"; // Aumenta el tamaño de fuente del texto a 24 píxeles
+    strong1.style.color = "green";
+    strong1.textContent = `${Land.id}`;
+    div1.append(span1, strong1);
+    div.append(div1);
+    information__table__1.append(h3, hr, div);
+};
+
+////////////////////////////////// SHIPS /////////////7
+
+
+
+export const tableCoresLauncheslandship = async (Ships) => {
+    let information__table__1 = document.querySelector("#information__table__1");
+    information__table__1.innerHTML = "";
+    let h3 = document.createElement("h3");
+    h3.textContent = "Information Ship"
+    let hr = document.createElement("hr");
+    information__table__1.append(h3, hr)
+
+    let div = document.createElement("div");
+    div.classList.add("table__container__1");
+    // 
+    let div1 = document.createElement("div");
+    let span1 = document.createElement("span");
+    span1.textContent = "IMO"
+    let strong1 = document.createElement("strong");
+    strong1.textContent = `${Ships.imo}`
+    div1.append(span1, strong1)
+
+    // 
+    let div2 = document.createElement("div");
+    let span2 = document.createElement("span");
+    span2.textContent = "MMSI"
+    let strong2 = document.createElement("strong");
+    strong2.textContent = `${Ships.mmsi}`
+    div2.append(span2, strong2)
+    
+    // 
+    let div3 = document.createElement("div");
+    let span3 = document.createElement("span");
+    span3.textContent = "ABS"
+    let strong3 = document.createElement("strong");
+    strong3.textContent = `${Ships.abs}`
+    div3.append(span3, strong3)
+
+    // 
+    let div4 = document.createElement("div");
+    let span4 = document.createElement("span");
+    span4.textContent = "Class"
+    let strong4 = document.createElement("strong");
+    strong4.textContent = `${Ships.class}`
+    div4.append(span4, strong4)
+
+    div.append(div1, div2, div3, div4)
+    information__table__1.append(div)
+}
+
+
+export const tableCoresLauncheslandsship = async (Ships) => {
+    let information__table__1 = document.querySelector("#information__table__2");
+    information__table__1.innerHTML = "";
+    let h3 = document.createElement("h3");
+    h3.textContent = "Information Ship"
+    let hr = document.createElement("hr");
+    information__table__1.append(h3, hr)
+
+    let div = document.createElement("div");
+    div.classList.add("table__container__1");
+    // 
+    let div1 = document.createElement("div");
+    let span1 = document.createElement("span");
+    span1.textContent = "IMO"
+    let strong1 = document.createElement("strong");
+    strong1.textContent = `${Ships.mass_kg}`
+    div1.append(span1, strong1)
+
+    // 
+    let div2 = document.createElement("div");
+    let span2 = document.createElement("span");
+    span2.textContent = "MMSI"
+    let strong2 = document.createElement("strong");
+    strong2.textContent = `${Ships.mass_lbs}`
+    div2.append(span2, strong2)
+    
+    // 
+    let div3 = document.createElement("div");
+    let span3 = document.createElement("span");
+    span3.textContent = "ABS"
+    let strong3 = document.createElement("strong");
+    strong3.textContent = `${Ships.year_built}`
+    div3.append(span3, strong3)
+
+    
+    div.append(div1, div2, div3)
+    information__table__1.append(div)
+}
