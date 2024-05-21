@@ -18,16 +18,6 @@ export const informationRockets = async(country, description)=>{
 
     let description__item = document.querySelector("#description__item")
     description__item.append(div)
-
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <small>Lorem ipsum dolor sit amet...</small>
-    //     </div>
-    // </div>
 }
 export const informationLaunchCostRocket = async(cost_per_launch)=>{
     let div = document.createElement('div');
@@ -48,16 +38,6 @@ export const informationLaunchCostRocket = async(cost_per_launch)=>{
 
     let description__item = document.querySelector("#description__item")
     description__item.append(div)
-
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <small>Lorem ipsum dolor sit amet...</small>
-    //     </div>
-    // </div>
 }
 export const informationFirstFlightRocket = async(first_flight)=>{
     let div = document.createElement('div');
@@ -77,16 +57,6 @@ export const informationFirstFlightRocket = async(first_flight)=>{
 
     let description__item = document.querySelector("#description__item")
     description__item.append(div)
-
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <small>Lorem ipsum dolor sit amet...</small>
-    //     </div>
-    // </div>
 }
 export const informationWebRocket = async(wikipedia)=>{
     let div = document.createElement('div');
@@ -107,16 +77,6 @@ export const informationWebRocket = async(wikipedia)=>{
     div.append(divFirst, divLast);
     let description__item = document.querySelector("#description__item")
     description__item.append(div)
-
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <a href="#" target="_blank">Lorem</a>
-    //     </div>
-    // </div>
 }
 
 
