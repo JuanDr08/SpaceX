@@ -178,6 +178,7 @@ body {
 .section__information__2 {
     /* background: blue; */
     grid-area: colum__1;
+    color: #48e;
     display: grid;
     grid-template-rows: 1fr 1.3fr;
     grid-template-areas:
@@ -234,6 +235,7 @@ body {
 .section__information__3 {
     /* background: violet; */
     grid-area: colum__3;
+    color: #48e;
     display: grid;
     grid-template-rows: 1fr 1.3fr;
     grid-template-areas:
